@@ -106,6 +106,17 @@ export class JobsScreen extends React.Component<JobsScreenProps, JobsScreenState
     console.log(newJobs, availability);
 
     // Step 1: Remove jobs where the schedule doesn't align with the users' availability.
+    
+    for(const day,avail of Object.entries(availability)){
+      //iterate through the days of availability
+      const jobSchedules = newJobs.map(job => job.schedule) 
+        for(const schedule of jobSchedules){
+          //if schedule contains avail[day] then we keep the job
+          //maybe use includes here?
+
+        }
+      }
+    }
 
     // Step 2: Save into state
     this.setState({ jobs: newJobs });

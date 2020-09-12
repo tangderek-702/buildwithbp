@@ -6,19 +6,19 @@ const win = Dimensions.get('window');
 
 export const ImageContainer = styled.View`
   align-items: center;
-  flex: 0.95;
+  flex: 0.5;
 `;
 
 export const LoginImg = styled.Image`
-  width: ${win.height * 1.4};
-  height: null;
+  width: ${win.height * 4};
+  height: 400;
   aspect-ratio: 1;
 `;
 
 export const LoginHeader = styled.Text`
   font-size: 40px;
   font-family: source-sans-pro-bold;
-  margin: 12.5% 0 5% 10%;
+  margin: 50% 0 5% 10%;
 `;
 
 export const LoginInput = styled.TextInput`
